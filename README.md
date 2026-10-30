@@ -1,11 +1,15 @@
- Anima Desktop
+PC Manager
 
-Anima Desktop is a lightweight Windows desktop companion application inspired by floating animated desktop characters and ambient overlays.
+Рабочая Windows-утилита на Python 3.12+ и PySide6 для мониторинга состояния системы.
 
-Features
-- Transparent desktop widget windows
-- Simple object model for image-based desktop companions
-- Project JSON storage
-- Multi-object management
-- PySide6-based UI foundation
+
+Установка и запуск
+
+py -3.12 -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+.\.venv\Scripts\python.exe main.py
+`
+
+
+Приложение сохраняет `history.db` и `logs/app.log` рядом с исходниками. NVIDIA-метрики доступны при установленном драйвере NVIDIA и `pynvml`; WMI-поля Windows показываются как `Unavailable`, если провайдер или права недоступны. Доступ к некоторым процессам и датчикам требует запуска от имени администратора.
 
