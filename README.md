@@ -1,15 +1,14 @@
 PC Manager
 
-Рабочая Windows-утилита на Python 3.12+ и PySide6 для мониторинга состояния системы.
+A functional Windows utility built with Python 3.12+ and PySide6 for monitoring system status.
 
 
-Установка и запуск
+Installation and Execution
 
 py -3.12 -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
 .\.venv\Scripts\python.exe main.py
-`
 
 
-Приложение сохраняет `history.db` и `logs/app.log` рядом с исходниками. NVIDIA-метрики доступны при установленном драйвере NVIDIA и `pynvml`; WMI-поля Windows показываются как `Unavailable`, если провайдер или права недоступны. Доступ к некоторым процессам и датчикам требует запуска от имени администратора.
+The application stores `history.db` and `logs/app.log` in the same directory as the source code. NVIDIA metrics are available provided that an NVIDIA driver and `pynvml` are installed; Windows WMI fields will appear as `Unavailable` if the provider is inaccessible or if the necessary permissions are lacking. Accessing certain processes and sensors requires running the application as an administrator.
 
