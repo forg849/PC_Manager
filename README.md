@@ -12,3 +12,4 @@ py -3.12 -m venv .venv
 
 The application stores `history.db` and `logs/app.log` in the same directory as the source code. NVIDIA metrics are available provided that an NVIDIA driver and `pynvml` are installed; Windows WMI fields will appear as `Unavailable` if the provider is inaccessible or if the necessary permissions are lacking. Accessing certain processes and sensors requires running the application as an administrator.
 
+!!! This is a very rough version, intended for further improvement. !!!
